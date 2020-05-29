@@ -1609,6 +1609,20 @@ class Encore {
         webpackConfig = null;
     }
 
+
+    /**
+     * If enabled, the SvelteJs loader is enabled.
+     *
+     * https://github.com/sveltejs/svelte-loader
+     * 
+     *     Encore.enableSvelte()
+     */
+    enableSvelte() {
+        webpackConfig.enableSvelte();
+
+        return this;
+    }
+
     /**
      * @deprecated
      * @return {void}
